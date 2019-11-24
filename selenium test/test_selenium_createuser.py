@@ -28,9 +28,8 @@ def test_admin_create_user_sucess():
     row_count2 = len(driver.find_elements_by_xpath("//table[@id='result_list']/tbody/tr"))
     assert row_count2 == row_count +1
     driver.close()
-'''
 
-'''
+
 def test_admin_create_user_username__field_empty():
     driver = webdriver.Chrome()
     driver.maximize_window()
